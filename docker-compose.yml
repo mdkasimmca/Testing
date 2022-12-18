@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testing.portal:
+    image: ${DOCKER_REGISTRY-}testingportal
+    build:
+      context: .
+      dockerfile: Testing.portal\Dockerfile
